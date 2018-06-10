@@ -6,7 +6,22 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:background="@color/colorTEST"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginTop="10dip"
+            android:text="@string/test_click"
+            android:id="@+id/testButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
     <WebView
+        android:layout_marginTop="10dip"
         android:id="@+id/webView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WebViewSample</string>
+    <string name="test_click">From Native To WEB Hello </string>
 </resources>
