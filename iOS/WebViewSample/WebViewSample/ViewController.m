@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet WKWebView *webView;
+@property (weak, nonatomic) IBOutlet UIButton *helloButton;
 
 @end
 
@@ -17,6 +18,8 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  
+  
   
   WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc]
                                            init];
@@ -40,7 +43,12 @@
 
 - (void)userContentController:(WKUserContentController *)userContentController
       didReceiveScriptMessage:(WKScriptMessage *)message {
-  
+}
+
+
+
+- (IBAction)clickedSayHello:(id)sender {
+  NSLog(@"hello");
 }
 
 
