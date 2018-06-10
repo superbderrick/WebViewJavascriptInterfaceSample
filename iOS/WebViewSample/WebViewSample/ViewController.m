@@ -25,8 +25,9 @@
   [controller addScriptMessageHandler:self name:@"observe"];
   configuration.userContentController = controller;
   
-  NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"];
-  NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:path]];
+  
+  NSURL *path = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"html"];
+  NSURLRequest *request=[NSURLRequest requestWithURL:path];
   
   [self.webView loadRequest:request];
   

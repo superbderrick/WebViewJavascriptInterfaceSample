@@ -15,6 +15,7 @@
 		49D1B6C520CCFCDA00848C46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D1B6C420CCFCDA00848C46 /* main.m */; };
 		49D7116C20CD1C8A00400D71 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 49D7116B20CD1C8A00400D71 /* test.html */; };
 		49D7116E20CD1C9800400D71 /* testFunction.js in Resources */ = {isa = PBXBuildFile; fileRef = 49D7116D20CD1C9800400D71 /* testFunction.js */; };
+		49D7117120CD1DBB00400D71 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D7117020CD1DBB00400D71 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		49D1B6C420CCFCDA00848C46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		49D7116B20CD1C8A00400D71 /* test.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		49D7116D20CD1C9800400D71 /* testFunction.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = testFunction.js; sourceTree = "<group>"; };
+		49D7117020CD1DBB00400D71 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49D7117120CD1DBB00400D71 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +51,7 @@
 			children = (
 				49D1B6B420CCFCDA00848C46 /* WebViewSample */,
 				49D1B6B320CCFCDA00848C46 /* Products */,
+				49D7116F20CD1DBB00400D71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +87,14 @@
 				49D7116D20CD1C9800400D71 /* testFunction.js */,
 			);
 			path = web;
+			sourceTree = "<group>";
+		};
+		49D7116F20CD1DBB00400D71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49D7117020CD1DBB00400D71 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

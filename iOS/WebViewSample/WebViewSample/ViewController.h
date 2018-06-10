@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
 
-@interface ViewController : UIViewController <WKScriptMessageHandler>
+@interface ViewController : UIViewController <WKScriptMessageHandler , WKNavigationDelegate, WKUIDelegate>
 
 
 @end
