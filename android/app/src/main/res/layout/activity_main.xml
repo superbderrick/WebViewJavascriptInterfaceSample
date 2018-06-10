@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:background="@color/colorTEST"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
@@ -16,6 +16,18 @@
             android:id="@+id/testButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/testTextView"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+
+            />
+
+
 
     </LinearLayout>
 

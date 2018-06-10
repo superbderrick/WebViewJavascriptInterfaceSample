@@ -1,21 +1,15 @@
-function show(info)
+var logAreas;
+
+function helloToClient()
 {
-    alert(info);
+    interface.testFunction('hello Native');
 }
 
-function link()
-{
-    window.launcher.showInfo('From WEB to Native');
+function setup() {
+    logAreas = document.getElementById('logAreas')
 }
 
-function check()
-{
-    if(window && window.launcher)
-    {
-        alert('pass');
-    }
-    else
-    {
-        alert('fail');
-    }
+function writeLOG() {
+    if(logAreas)
+        logAreas.innerHTML += "clicked from Native ";
 }

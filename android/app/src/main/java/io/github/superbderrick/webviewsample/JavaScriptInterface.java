@@ -1,47 +1,38 @@
 package io.github.superbderrick.webviewsample;
 
-import android.webkit.JavascriptInterface;
+import android.content.Context;
+import android.util.Log;
+import android.widget.Toast;
 
-import org.json.JSONException;
-import org.json.JSONObject;
 
-public class JavaScriptInterface {
-
-    private OnJavaScriptEventListener listener;
-
+public class JavascriptInterface
+{
     public interface OnJavaScriptEventListener {
         void sayHelloMessageFromWEB(String keyword);
     }
 
-    //    public void setOnJavascriptEventListener(OnJavaScriptEventListener listener) {
-//        this.listener = listener;
-//    }
+    private JavascriptInterface.OnJavaScriptEventListener listener;
 
-    private String id;
-
-    public JavaScriptInterface(String id) {
-        this.id = id;
+    public void setOnJavascriptEventListener(OnJavaScriptEventListener listener) {
+        this.listener = listener;
     }
 
-    @JavascriptInterface
-    public String toJson() {
-        JSONObject json = new JSONObject();
-        try {
-            json.put("id", this.id);
-        } catch (JSONException e) {
-            //no hacemos nada
-        }
-        return json.toString();
+    private Context mContext;
+
+    public JavascriptInterface(Context context)
+    {
+        mContext = context;
     }
 
+    @android.webkit.JavascriptInterface
+    public void showInfo(String info)
+    {
+        Toast.makeText(mContext,info, Toast.LENGTH_SHORT).show();
+    }
 
-
-
-//
-//    public JavaScriptInterface() {
-//
-//    }
-//
-
+    @android.webkit.JavascriptInterface
+    public void testFunction(String sentence) {
+        listener.sayHelloMessageFromWEB(sentence);
+    }
 
 }
