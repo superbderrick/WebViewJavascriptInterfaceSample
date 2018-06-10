@@ -64,15 +64,15 @@ public class MainActivity extends AppCompatActivity  {
         mWebView.getSettings().setJavaScriptEnabled(true);
         mWebView.getSettings().setDefaultTextEncodingName("UTF-8");
 
-        mWebView.getSettings().setBuiltInZoomControls(true);
+//        mWebView.getSettings().setBuiltInZoomControls(true);
         // 화면에 맞게 WebView 사이즈를 정의
-        mWebView.getSettings().setLoadWithOverviewMode(true);
+//        mWebView.getSettings().setLoadWithOverviewMode(true);
         // ViewPort meta tag를 활성화 여부
         mWebView.getSettings().setUseWideViewPort(true);
         // 줌 컨트롤 사용 여부
-        mWebView.getSettings().setDisplayZoomControls(false);
+//        mWebView.getSettings().setDisplayZoomControls(false);
         // 사용자 제스처를 통한 줌 기능 활성화 여부
-        mWebView.getSettings().setSupportZoom(false);
+//        mWebView.getSettings().setSupportZoom(false);
         // TextEncoding 이름 정의
 
         // Setting Local Storage
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity  {
         mWebView.getSettings().setDomStorageEnabled(true);
 
         // 캐쉬 사용 방법을 정의
-        mWebView.getSettings().setCacheMode(mWebView.getSettings().LOAD_NO_CACHE);
+//        mWebView.getSettings().setCacheMode(mWebView.getSettings().LOAD_NO_CACHE);
 
 
         mWebView.addJavascriptInterface(mJavascriptInterface , "interface");

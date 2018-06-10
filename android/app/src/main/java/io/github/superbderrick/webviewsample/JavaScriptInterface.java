@@ -5,7 +5,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 
-public class JavascriptInterface
+class JavascriptInterface
 {
     public interface OnJavaScriptEventListener {
         void sayHelloMessageFromWEB(String keyword);
