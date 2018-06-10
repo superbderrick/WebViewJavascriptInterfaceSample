@@ -13,8 +13,6 @@
 		49D1B6BF20CCFCDA00848C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D1B6BE20CCFCDA00848C46 /* Assets.xcassets */; };
 		49D1B6C220CCFCDA00848C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D1B6C020CCFCDA00848C46 /* LaunchScreen.storyboard */; };
 		49D1B6C520CCFCDA00848C46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D1B6C420CCFCDA00848C46 /* main.m */; };
-		49D1B6CE20CD0B7900848C46 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 49D1B6CC20CCFDD000848C46 /* test.html */; };
-		49D1B6CF20CD0B7900848C46 /* testFunction.js in Resources */ = {isa = PBXBuildFile; fileRef = 49D1B6CD20CCFDD000848C46 /* testFunction.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +26,6 @@
 		49D1B6C120CCFCDA00848C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49D1B6C320CCFCDA00848C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49D1B6C420CCFCDA00848C46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		49D1B6CC20CCFDD000848C46 /* test.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = test.html; path = ../../../../android/app/src/main/assets/test.html; sourceTree = "<group>"; };
-		49D1B6CD20CCFDD000848C46 /* testFunction.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = testFunction.js; path = ../../../../android/app/src/main/assets/testFunction.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +75,6 @@
 		49D1B6CB20CCFD9B00848C46 /* web */ = {
 			isa = PBXGroup;
 			children = (
-				49D1B6CC20CCFDD000848C46 /* test.html */,
-				49D1B6CD20CCFDD000848C46 /* testFunction.js */,
 			);
 			path = web;
 			sourceTree = "<group>";
@@ -143,8 +137,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49D1B6CE20CD0B7900848C46 /* test.html in Resources */,
-				49D1B6CF20CD0B7900848C46 /* testFunction.js in Resources */,
 				49D1B6C220CCFCDA00848C46 /* LaunchScreen.storyboard in Resources */,
 				49D1B6BF20CCFCDA00848C46 /* Assets.xcassets in Resources */,
 				49D1B6BD20CCFCDA00848C46 /* Main.storyboard in Resources */,
